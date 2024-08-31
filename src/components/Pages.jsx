@@ -38,10 +38,8 @@ function Pages() {
             </div>
             <div className="post-content">
               <h3 className="post-title">{post.title}</h3>
-              <p className="post-body">{post.body.substring(0, 100)}...</p>
-              <a href={`#`} className="post-link">
-                Read more
-              </a>
+              <p className="post-body">{post.body}</p>
+             
             </div>
           </li>
         ))}
