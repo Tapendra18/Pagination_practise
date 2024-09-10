@@ -26,19 +26,19 @@ function Pages() {
   return (
     <div className="pagination-container">
       <ul className="post-list">
-        {data.map((post) => (
-          <li key={post.id} className="post-item">
+        {data?.map((post) => (
+          <li key={post?.id} className="post-item">
             <div className="post-thumbnail">
               <img
-                src={`https://dummyimage.com/100x100/000/fff&text=${post.title.charAt(
+                src={`https://dummyimage.com/100x100/000/fff&text=${post?.title?.charAt(
                   0
                 )}`}
-                alt={post.title}
+                alt={post?.title}
               />
             </div>
             <div className="post-content">
-              <h3 className="post-title">{post.title}</h3>
-              <p className="post-body">{post.body}</p>
+              <h3 className="post-title">{post?.title}</h3>
+              <p className="post-body">{post?.body}</p>
              
             </div>
           </li>
